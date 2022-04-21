@@ -42,3 +42,306 @@ Happy modeling!
 05:17:58.989504 [debug] [MainThread]: On debug: Close
 05:17:59.258588 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f71fe0fe490>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f71fe0fe5e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f71fe0e0fd0>]}
 05:18:00.212390 [debug] [MainThread]: Connection 'debug' was properly closed.
+
+
+============================== 2022-04-21 22:07:08.492250 | b0d1ada3-27bf-4c8e-bd83-7a18633829a1 ==============================
+22:07:08.492250 [info ] [MainThread]: Running with dbt=1.0.4
+22:07:08.494169 [debug] [MainThread]: running dbt with arguments Namespace(record_timing_info=None, debug=None, log_format=None, write_json=None, use_colors=None, printer_width=None, warn_error=None, version_check=None, partial_parse=None, single_threaded=False, use_experimental_parser=None, static_parser=None, profiles_dir='/root/.dbt', send_anonymous_usage_stats=None, fail_fast=None, event_buffer_size=None, project_dir=None, profile=None, target=None, vars='{}', log_cache_events=False, full_refresh=False, show=False, threads=None, select=None, exclude=None, selector_name=None, state=None, defer=None, cls=<class 'dbt.task.seed.SeedTask'>, which='seed', rpc_method='seed')
+22:07:08.495462 [debug] [MainThread]: Tracking: tracking
+22:07:08.498109 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6ff2b4e430>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6ff2b4e8e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6ff2b4ea60>]}
+22:07:08.523050 [info ] [MainThread]: Partial parse save file not found. Starting full parse.
+22:07:08.526516 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': 'b0d1ada3-27bf-4c8e-bd83-7a18633829a1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6ff2b4ec70>]}
+22:07:08.577418 [debug] [MainThread]: Parsing macros/adapters.sql
+22:07:08.647465 [debug] [MainThread]: Parsing macros/catalog.sql
+22:07:08.651948 [debug] [MainThread]: Parsing macros/materializations/seed.sql
+22:07:08.661752 [debug] [MainThread]: Parsing macros/materializations/incremental.sql
+22:07:08.676429 [debug] [MainThread]: Parsing macros/materializations/merge.sql
+22:07:08.683702 [debug] [MainThread]: Parsing macros/materializations/view.sql
+22:07:08.686955 [debug] [MainThread]: Parsing macros/materializations/table.sql
+22:07:08.692497 [debug] [MainThread]: Parsing macros/materializations/snapshot.sql
+22:07:08.694991 [debug] [MainThread]: Parsing macros/materializations/configs.sql
+22:07:08.699442 [debug] [MainThread]: Parsing macros/materializations/hooks.sql
+22:07:08.706736 [debug] [MainThread]: Parsing macros/materializations/snapshots/strategies.sql
+22:07:08.733713 [debug] [MainThread]: Parsing macros/materializations/snapshots/helpers.sql
+22:07:08.753574 [debug] [MainThread]: Parsing macros/materializations/snapshots/snapshot_merge.sql
+22:07:08.757540 [debug] [MainThread]: Parsing macros/materializations/snapshots/snapshot.sql
+22:07:08.776637 [debug] [MainThread]: Parsing macros/materializations/tests/test.sql
+22:07:08.785947 [debug] [MainThread]: Parsing macros/materializations/tests/helpers.sql
+22:07:08.790165 [debug] [MainThread]: Parsing macros/materializations/tests/where_subquery.sql
+22:07:08.793775 [debug] [MainThread]: Parsing macros/materializations/seeds/seed.sql
+22:07:08.804156 [debug] [MainThread]: Parsing macros/materializations/seeds/helpers.sql
+22:07:08.831977 [debug] [MainThread]: Parsing macros/materializations/models/view/create_view_as.sql
+22:07:08.836861 [debug] [MainThread]: Parsing macros/materializations/models/view/helpers.sql
+22:07:08.840162 [debug] [MainThread]: Parsing macros/materializations/models/view/view.sql
+22:07:08.852397 [debug] [MainThread]: Parsing macros/materializations/models/view/create_or_replace_view.sql
+22:07:08.857269 [debug] [MainThread]: Parsing macros/materializations/models/incremental/on_schema_change.sql
+22:07:08.883973 [debug] [MainThread]: Parsing macros/materializations/models/incremental/incremental.sql
+22:07:08.901423 [debug] [MainThread]: Parsing macros/materializations/models/incremental/merge.sql
+22:07:08.920705 [debug] [MainThread]: Parsing macros/materializations/models/incremental/column_helpers.sql
+22:07:08.928959 [debug] [MainThread]: Parsing macros/materializations/models/incremental/is_incremental.sql
+22:07:08.932402 [debug] [MainThread]: Parsing macros/materializations/models/table/create_table_as.sql
+22:07:08.937530 [debug] [MainThread]: Parsing macros/materializations/models/table/table.sql
+22:07:08.950018 [debug] [MainThread]: Parsing macros/generic_test_sql/not_null.sql
+22:07:08.952182 [debug] [MainThread]: Parsing macros/generic_test_sql/unique.sql
+22:07:08.954448 [debug] [MainThread]: Parsing macros/generic_test_sql/accepted_values.sql
+22:07:08.957304 [debug] [MainThread]: Parsing macros/generic_test_sql/relationships.sql
+22:07:08.959352 [debug] [MainThread]: Parsing macros/etc/datetime.sql
+22:07:08.973298 [debug] [MainThread]: Parsing macros/etc/statement.sql
+22:07:08.981051 [debug] [MainThread]: Parsing macros/get_custom_name/get_custom_alias.sql
+22:07:08.984121 [debug] [MainThread]: Parsing macros/get_custom_name/get_custom_schema.sql
+22:07:08.989280 [debug] [MainThread]: Parsing macros/get_custom_name/get_custom_database.sql
+22:07:08.992745 [debug] [MainThread]: Parsing macros/adapters/schema.sql
+22:07:08.997291 [debug] [MainThread]: Parsing macros/adapters/indexes.sql
+22:07:09.003823 [debug] [MainThread]: Parsing macros/adapters/metadata.sql
+22:07:09.016244 [debug] [MainThread]: Parsing macros/adapters/persist_docs.sql
+22:07:09.024339 [debug] [MainThread]: Parsing macros/adapters/freshness.sql
+22:07:09.032577 [debug] [MainThread]: Parsing macros/adapters/relation.sql
+22:07:09.051110 [debug] [MainThread]: Parsing macros/adapters/columns.sql
+22:07:09.067013 [debug] [MainThread]: Parsing tests/generic/builtin.sql
+22:07:09.362276 [debug] [MainThread]: 1699: static parser successfully parsed example/my_first_dbt_model.sql
+22:07:09.379865 [debug] [MainThread]: 1699: static parser successfully parsed example/my_second_dbt_model.sql
+22:07:09.488856 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'b0d1ada3-27bf-4c8e-bd83-7a18633829a1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6ff2ad0a00>]}
+22:07:09.506983 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'b0d1ada3-27bf-4c8e-bd83-7a18633829a1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6ff2a1fee0>]}
+22:07:09.508368 [info ] [MainThread]: Found 2 models, 4 tests, 0 snapshots, 0 analyses, 179 macros, 0 operations, 3 seed files, 0 sources, 0 exposures, 0 metrics
+22:07:09.511871 [info ] [MainThread]: 
+22:07:09.513427 [debug] [MainThread]: Acquiring new snowflake connection "master"
+22:07:09.516062 [debug] [ThreadPool]: Acquiring new snowflake connection "list_analytics"
+22:07:09.541046 [debug] [ThreadPool]: Using snowflake connection "list_analytics"
+22:07:09.542765 [debug] [ThreadPool]: On list_analytics: /* {"app": "dbt", "dbt_version": "1.0.4", "profile_name": "dbt-refactoring2", "target_name": "dev", "connection_name": "list_analytics"} */
+
+    show terse schemas in database analytics
+    limit 10000
+22:07:09.544925 [debug] [ThreadPool]: Opening a new connection, currently in state init
+22:07:11.311190 [debug] [ThreadPool]: SQL status: SUCCESS 6 in 1.77 seconds
+22:07:11.315744 [debug] [ThreadPool]: On list_analytics: Close
+22:07:11.474458 [debug] [ThreadPool]: Acquiring new snowflake connection "create_analytics_dbt_knguyen_refactor2"
+22:07:11.476286 [debug] [ThreadPool]: Acquiring new snowflake connection "create_analytics_dbt_knguyen_refactor2"
+22:07:11.477508 [debug] [ThreadPool]: Creating schema "_ReferenceKey(database='analytics', schema='dbt_knguyen_refactor2', identifier=None)"
+22:07:11.486434 [debug] [ThreadPool]: Using snowflake connection "create_analytics_dbt_knguyen_refactor2"
+22:07:11.487755 [debug] [ThreadPool]: On create_analytics_dbt_knguyen_refactor2: /* {"app": "dbt", "dbt_version": "1.0.4", "profile_name": "dbt-refactoring2", "target_name": "dev", "connection_name": "create_analytics_dbt_knguyen_refactor2"} */
+create schema if not exists analytics.dbt_knguyen_refactor2
+22:07:11.489647 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+22:07:12.366466 [debug] [ThreadPool]: SQL status: SUCCESS 1 in 0.88 seconds
+22:07:12.369502 [debug] [ThreadPool]: On create_analytics_dbt_knguyen_refactor2: Close
+22:07:12.531062 [debug] [ThreadPool]: Acquiring new snowflake connection "list_analytics_dbt_knguyen_refactor2"
+22:07:12.542671 [debug] [ThreadPool]: Using snowflake connection "list_analytics_dbt_knguyen_refactor2"
+22:07:12.543804 [debug] [ThreadPool]: On list_analytics_dbt_knguyen_refactor2: /* {"app": "dbt", "dbt_version": "1.0.4", "profile_name": "dbt-refactoring2", "target_name": "dev", "connection_name": "list_analytics_dbt_knguyen_refactor2"} */
+
+    show terse objects in analytics.dbt_knguyen_refactor2
+22:07:12.545416 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+22:07:13.142747 [debug] [ThreadPool]: SQL status: SUCCESS 0 in 0.6 seconds
+22:07:13.146632 [debug] [ThreadPool]: On list_analytics_dbt_knguyen_refactor2: Close
+22:07:13.292095 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+22:07:13.294079 [info ] [MainThread]: 
+22:07:13.304657 [debug] [Thread-2  ]: Began running node seed.dbt_refactoring2.orders
+22:07:13.305108 [debug] [Thread-3  ]: Began running node seed.dbt_refactoring2.payments
+22:07:13.305493 [debug] [Thread-1  ]: Began running node seed.dbt_refactoring2.customers
+22:07:13.307954 [info ] [Thread-2  ]: 2 of 3 START seed file dbt_knguyen_refactor2.orders............................. [RUN]
+22:07:13.310474 [info ] [Thread-3  ]: 3 of 3 START seed file dbt_knguyen_refactor2.payments........................... [RUN]
+22:07:13.312912 [info ] [Thread-1  ]: 1 of 3 START seed file dbt_knguyen_refactor2.customers.......................... [RUN]
+22:07:13.315518 [debug] [Thread-2  ]: Acquiring new snowflake connection "seed.dbt_refactoring2.orders"
+22:07:13.318254 [debug] [Thread-3  ]: Acquiring new snowflake connection "seed.dbt_refactoring2.payments"
+22:07:13.324377 [debug] [Thread-3  ]: Began compiling node seed.dbt_refactoring2.payments
+22:07:13.321915 [debug] [Thread-2  ]: Began compiling node seed.dbt_refactoring2.orders
+22:07:13.321097 [debug] [Thread-1  ]: Acquiring new snowflake connection "seed.dbt_refactoring2.customers"
+22:07:13.326140 [debug] [Thread-3  ]: finished collecting timing info
+22:07:13.328332 [debug] [Thread-2  ]: finished collecting timing info
+22:07:13.331300 [debug] [Thread-1  ]: Began compiling node seed.dbt_refactoring2.customers
+22:07:13.333822 [debug] [Thread-3  ]: Began executing node seed.dbt_refactoring2.payments
+22:07:13.335411 [debug] [Thread-2  ]: Began executing node seed.dbt_refactoring2.orders
+22:07:13.337285 [debug] [Thread-1  ]: finished collecting timing info
+22:07:13.393345 [debug] [Thread-1  ]: Began executing node seed.dbt_refactoring2.customers
+22:07:13.461890 [debug] [Thread-1  ]: Using snowflake connection "seed.dbt_refactoring2.customers"
+22:07:13.462857 [debug] [Thread-1  ]: On seed.dbt_refactoring2.customers: /* {"app": "dbt", "dbt_version": "1.0.4", "profile_name": "dbt-refactoring2", "target_name": "dev", "node_id": "seed.dbt_refactoring2.customers"} */
+
+    create table analytics.dbt_knguyen_refactor2.customers (ID integer,FIRST_NAME text,LAST_NAME text)
+22:07:13.465314 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+22:07:13.476931 [debug] [Thread-2  ]: Using snowflake connection "seed.dbt_refactoring2.orders"
+22:07:13.479182 [debug] [Thread-2  ]: On seed.dbt_refactoring2.orders: /* {"app": "dbt", "dbt_version": "1.0.4", "profile_name": "dbt-refactoring2", "target_name": "dev", "node_id": "seed.dbt_refactoring2.orders"} */
+
+    create table analytics.dbt_knguyen_refactor2.orders (ID integer,USER_ID integer,ORDER_DATE date,STATUS text)
+22:07:13.481350 [debug] [Thread-3  ]: Using snowflake connection "seed.dbt_refactoring2.payments"
+22:07:13.481763 [debug] [Thread-2  ]: Opening a new connection, currently in state init
+22:07:13.482714 [debug] [Thread-3  ]: On seed.dbt_refactoring2.payments: /* {"app": "dbt", "dbt_version": "1.0.4", "profile_name": "dbt-refactoring2", "target_name": "dev", "node_id": "seed.dbt_refactoring2.payments"} */
+
+    create table analytics.dbt_knguyen_refactor2.payments (ID integer,ORDERID integer,PAYMENTMETHOD text,STATUS text,AMOUNT integer,CREATED date)
+22:07:13.488095 [debug] [Thread-3  ]: Opening a new connection, currently in state init
+22:07:14.550511 [debug] [Thread-1  ]: SQL status: SUCCESS 1 in 1.09 seconds
+22:07:14.578336 [debug] [Thread-1  ]: Using snowflake connection "seed.dbt_refactoring2.customers"
+22:07:14.579418 [debug] [Thread-1  ]: On seed.dbt_refactoring2.customers: BEGIN
+22:07:14.637280 [debug] [Thread-2  ]: SQL status: SUCCESS 1 in 1.16 seconds
+22:07:14.647450 [debug] [Thread-2  ]: Using snowflake connection "seed.dbt_refactoring2.orders"
+22:07:14.648400 [debug] [Thread-2  ]: On seed.dbt_refactoring2.orders: BEGIN
+22:07:14.695210 [debug] [Thread-3  ]: SQL status: SUCCESS 1 in 1.21 seconds
+22:07:14.704218 [debug] [Thread-3  ]: Using snowflake connection "seed.dbt_refactoring2.payments"
+22:07:14.705254 [debug] [Thread-3  ]: On seed.dbt_refactoring2.payments: BEGIN
+22:07:14.714472 [debug] [Thread-1  ]: SQL status: SUCCESS 1 in 0.13 seconds
+22:07:14.717890 [debug] [Thread-1  ]: Using snowflake connection "seed.dbt_refactoring2.customers"
+22:07:14.719238 [debug] [Thread-1  ]: On seed.dbt_refactoring2.customers: insert into analytics.dbt_knguyen_refactor2.customers (ID, FIRST_NAME, LAST_NAME) values
+            (%s,%s,%s),(%s,%s,%s),(%s,%s,%s),(%s,%s,%s),(%s,%s,%s),(%s,%s,%s),(%s,%s,%s),(%s,%s,%s),(%s,%s,%s),(%s,%s,%s),(%s,%s,%s),(%s,%s,%s),(%s,%s,%s),(%s,%s,%s),(%s,%s,%s),(%s,%s,%s),(%s,%s,%s),(%s,%s,%s),(%s,%s,%s),(%s,%s,%s),(%s,%s,%s),(%s,%s,%s),(%s,%s,%s),(%s,%s,%s),(%s,%s,%s),(%s,%s,%s),(%s,%s,%s),(%s,%s,%s),(%s,%s,%s),(%s,%s,%s),(%s,%s,%s),(%s,%s,%s),(%s,%s,%s),(%s,%s,%s),(%s,%s,%s),(%s,%s,%s),(%s,%s,%s),(%s,...
+22:07:14.767413 [debug] [Thread-2  ]: SQL status: SUCCESS 1 in 0.12 seconds
+22:07:14.773348 [debug] [Thread-2  ]: Using snowflake connection "seed.dbt_refactoring2.orders"
+22:07:14.774857 [debug] [Thread-2  ]: On seed.dbt_refactoring2.orders: insert into analytics.dbt_knguyen_refactor2.orders (ID, USER_ID, ORDER_DATE, STATUS) values
+            (%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%...
+22:07:14.815279 [debug] [Thread-3  ]: SQL status: SUCCESS 1 in 0.11 seconds
+22:07:14.823007 [debug] [Thread-3  ]: Using snowflake connection "seed.dbt_refactoring2.payments"
+22:07:14.824369 [debug] [Thread-3  ]: On seed.dbt_refactoring2.payments: insert into analytics.dbt_knguyen_refactor2.payments (ID, ORDERID, PAYMENTMETHOD, STATUS, AMOUNT, CREATED) values
+            (%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s...
+22:07:16.118216 [debug] [Thread-2  ]: SQL status: SUCCESS 99 in 1.34 seconds
+22:07:16.119759 [debug] [Thread-2  ]: Using snowflake connection "seed.dbt_refactoring2.orders"
+22:07:16.121205 [debug] [Thread-2  ]: On seed.dbt_refactoring2.orders: COMMIT
+22:07:16.345668 [debug] [Thread-3  ]: SQL status: SUCCESS 120 in 1.52 seconds
+22:07:16.347839 [debug] [Thread-3  ]: Using snowflake connection "seed.dbt_refactoring2.payments"
+22:07:16.349533 [debug] [Thread-3  ]: On seed.dbt_refactoring2.payments: COMMIT
+22:07:16.394967 [debug] [Thread-2  ]: SQL status: SUCCESS 1 in 0.27 seconds
+22:07:16.402223 [debug] [Thread-2  ]: Writing runtime SQL for node "seed.dbt_refactoring2.orders"
+22:07:16.440995 [debug] [Thread-2  ]: finished collecting timing info
+22:07:16.442140 [debug] [Thread-2  ]: On seed.dbt_refactoring2.orders: Close
+22:07:16.474461 [debug] [Thread-1  ]: SQL status: SUCCESS 100 in 1.75 seconds
+22:07:16.476744 [debug] [Thread-1  ]: Using snowflake connection "seed.dbt_refactoring2.customers"
+22:07:16.479339 [debug] [Thread-1  ]: On seed.dbt_refactoring2.customers: COMMIT
+22:07:16.602411 [debug] [Thread-2  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'b0d1ada3-27bf-4c8e-bd83-7a18633829a1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6ff1197fd0>]}
+22:07:16.604774 [info ] [Thread-2  ]: 2 of 3 OK loaded seed file dbt_knguyen_refactor2.orders......................... [[32mINSERT 99[0m in 3.29s]
+22:07:16.606425 [debug] [Thread-2  ]: Finished running node seed.dbt_refactoring2.orders
+22:07:16.631564 [debug] [Thread-3  ]: SQL status: SUCCESS 1 in 0.28 seconds
+22:07:16.633068 [debug] [Thread-3  ]: Writing runtime SQL for node "seed.dbt_refactoring2.payments"
+22:07:16.640060 [debug] [Thread-3  ]: finished collecting timing info
+22:07:16.640790 [debug] [Thread-3  ]: On seed.dbt_refactoring2.payments: Close
+22:07:16.758523 [debug] [Thread-1  ]: SQL status: SUCCESS 1 in 0.28 seconds
+22:07:16.762253 [debug] [Thread-1  ]: Writing runtime SQL for node "seed.dbt_refactoring2.customers"
+22:07:16.769574 [debug] [Thread-1  ]: finished collecting timing info
+22:07:16.770389 [debug] [Thread-1  ]: On seed.dbt_refactoring2.customers: Close
+22:07:16.783718 [debug] [Thread-3  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'b0d1ada3-27bf-4c8e-bd83-7a18633829a1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6ff02f93d0>]}
+22:07:16.785304 [info ] [Thread-3  ]: 3 of 3 OK loaded seed file dbt_knguyen_refactor2.payments....................... [[32mINSERT 120[0m in 3.47s]
+22:07:16.787083 [debug] [Thread-3  ]: Finished running node seed.dbt_refactoring2.payments
+22:07:17.262312 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'b0d1ada3-27bf-4c8e-bd83-7a18633829a1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6ff02ed430>]}
+22:07:17.263926 [info ] [Thread-1  ]: 1 of 3 OK loaded seed file dbt_knguyen_refactor2.customers...................... [[32mINSERT 100[0m in 3.94s]
+22:07:17.266165 [debug] [Thread-1  ]: Finished running node seed.dbt_refactoring2.customers
+22:07:17.269794 [debug] [MainThread]: Acquiring new snowflake connection "master"
+22:07:17.271193 [info ] [MainThread]: 
+22:07:17.273136 [info ] [MainThread]: Finished running 3 seeds in 7.76s.
+22:07:17.274256 [debug] [MainThread]: Connection 'master' was properly closed.
+22:07:17.276312 [debug] [MainThread]: Connection 'seed.dbt_refactoring2.customers' was properly closed.
+22:07:17.278659 [debug] [MainThread]: Connection 'seed.dbt_refactoring2.orders' was properly closed.
+22:07:17.280585 [debug] [MainThread]: Connection 'seed.dbt_refactoring2.payments' was properly closed.
+22:07:17.295216 [info ] [MainThread]: 
+22:07:17.296745 [info ] [MainThread]: [32mCompleted successfully[0m
+22:07:17.299030 [info ] [MainThread]: 
+22:07:17.301791 [info ] [MainThread]: Done. PASS=3 WARN=0 ERROR=0 SKIP=0 TOTAL=3
+22:07:17.304766 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6ff1197b20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6ff2a17100>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6ff02f24f0>]}
+
+
+============================== 2022-04-21 22:50:24.184633 | 4bb64edb-9406-4285-8f09-e53f810b3bad ==============================
+22:50:24.184633 [info ] [MainThread]: Running with dbt=1.0.4
+22:50:24.187426 [debug] [MainThread]: running dbt with arguments Namespace(record_timing_info=None, debug=None, log_format=None, write_json=None, use_colors=None, printer_width=None, warn_error=None, version_check=None, partial_parse=None, single_threaded=False, use_experimental_parser=None, static_parser=None, profiles_dir='/root/.dbt', send_anonymous_usage_stats=None, fail_fast=None, event_buffer_size=None, project_dir=None, profile=None, target=None, vars='{}', log_cache_events=False, threads=None, select=['customer_orders'], exclude=None, selector_name=None, state=None, defer=None, full_refresh=False, cls=<class 'dbt.task.run.RunTask'>, which='run', rpc_method='run')
+22:50:24.188455 [debug] [MainThread]: Tracking: tracking
+22:50:24.190617 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3872df1430>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3872df18e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3872df1a60>]}
+22:50:24.249135 [debug] [MainThread]: Partial parsing enabled: 3 files deleted, 1 files added, 0 files changed.
+22:50:24.250672 [debug] [MainThread]: Partial parsing: added file: dbt_refactoring2://models/legacy/customer_orders.sql
+22:50:24.252431 [debug] [MainThread]: Partial parsing: deleted file: dbt_refactoring2://models/example/my_second_dbt_model.sql
+22:50:24.255202 [debug] [MainThread]: Partial parsing: deleted file: dbt_refactoring2://models/example/my_first_dbt_model.sql
+22:50:24.273017 [debug] [MainThread]: 1699: static parser successfully parsed legacy/customer_orders.sql
+22:50:24.312027 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '4bb64edb-9406-4285-8f09-e53f810b3bad', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3872c4b0d0>]}
+22:50:24.326674 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '4bb64edb-9406-4285-8f09-e53f810b3bad', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3872de0850>]}
+22:50:24.327743 [info ] [MainThread]: Found 1 model, 0 tests, 0 snapshots, 0 analyses, 179 macros, 0 operations, 3 seed files, 0 sources, 0 exposures, 0 metrics
+22:50:24.331340 [info ] [MainThread]: 
+22:50:24.334306 [debug] [MainThread]: Acquiring new snowflake connection "master"
+22:50:24.337200 [debug] [ThreadPool]: Acquiring new snowflake connection "list_analytics"
+22:50:24.358601 [debug] [ThreadPool]: Using snowflake connection "list_analytics"
+22:50:24.359834 [debug] [ThreadPool]: On list_analytics: /* {"app": "dbt", "dbt_version": "1.0.4", "profile_name": "dbt-refactoring2", "target_name": "dev", "connection_name": "list_analytics"} */
+
+    show terse schemas in database analytics
+    limit 10000
+22:50:24.362092 [debug] [ThreadPool]: Opening a new connection, currently in state init
+22:50:25.627176 [debug] [ThreadPool]: SQL status: SUCCESS 7 in 1.27 seconds
+22:50:25.632124 [debug] [ThreadPool]: On list_analytics: Close
+22:50:25.797749 [debug] [ThreadPool]: Acquiring new snowflake connection "list_analytics_dbt_knguyen_refactor2"
+22:50:25.810092 [debug] [ThreadPool]: Using snowflake connection "list_analytics_dbt_knguyen_refactor2"
+22:50:25.811001 [debug] [ThreadPool]: On list_analytics_dbt_knguyen_refactor2: /* {"app": "dbt", "dbt_version": "1.0.4", "profile_name": "dbt-refactoring2", "target_name": "dev", "connection_name": "list_analytics_dbt_knguyen_refactor2"} */
+
+    show terse objects in analytics.dbt_knguyen_refactor2
+22:50:25.812680 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+22:50:26.665064 [debug] [ThreadPool]: SQL status: SUCCESS 3 in 0.85 seconds
+22:50:26.669309 [debug] [ThreadPool]: On list_analytics_dbt_knguyen_refactor2: Close
+22:50:26.850619 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+22:50:26.852490 [info ] [MainThread]: 
+22:50:26.839803 [debug] [Thread-1  ]: Began running node model.dbt_refactoring2.customer_orders
+22:50:26.841777 [info ] [Thread-1  ]: 1 of 1 START view model dbt_knguyen_refactor2.customer_orders................... [RUN]
+22:50:26.843870 [debug] [Thread-1  ]: Acquiring new snowflake connection "model.dbt_refactoring2.customer_orders"
+22:50:26.844708 [debug] [Thread-1  ]: Began compiling node model.dbt_refactoring2.customer_orders
+22:50:26.846574 [debug] [Thread-1  ]: Compiling model.dbt_refactoring2.customer_orders
+22:50:26.850894 [debug] [Thread-1  ]: Writing injected SQL for node "model.dbt_refactoring2.customer_orders"
+22:50:26.874483 [debug] [Thread-1  ]: finished collecting timing info
+22:50:26.876293 [debug] [Thread-1  ]: Began executing node model.dbt_refactoring2.customer_orders
+22:50:26.919038 [debug] [Thread-1  ]: Writing runtime SQL for node "model.dbt_refactoring2.customer_orders"
+22:50:26.932825 [debug] [Thread-1  ]: Using snowflake connection "model.dbt_refactoring2.customer_orders"
+22:50:26.933600 [debug] [Thread-1  ]: On model.dbt_refactoring2.customer_orders: /* {"app": "dbt", "dbt_version": "1.0.4", "profile_name": "dbt-refactoring2", "target_name": "dev", "node_id": "model.dbt_refactoring2.customer_orders"} */
+
+  create or replace  view analytics.dbt_knguyen_refactor2.customer_orders 
+  
+   as (
+    WITH paid_orders as (select Orders.ID as order_id,
+    Orders.USER_ID	as customer_id,
+    Orders.ORDER_DATE AS order_placed_at,
+        Orders.STATUS AS order_status,
+    p.total_amount_paid,
+    p.payment_finalized_date,
+    C.FIRST_NAME    as customer_first_name,
+        C.LAST_NAME as customer_last_name
+FROM raw.jaffle_shop.orders as Orders
+left join (select ORDERID as order_id, max(CREATED) as payment_finalized_date, sum(AMOUNT) / 100.0 as total_amount_paid
+        from raw.stripe.payment
+        where STATUS <> 'fail'
+        group by 1) p ON orders.ID = p.order_id
+left join raw.jaffle_shop.customers C on orders.USER_ID = C.ID ),
+
+customer_orders 
+as (select C.ID as customer_id
+    , min(ORDER_DATE) as first_order_date
+    , max(ORDER_DATE) as most_recent_order_date
+    , count(ORDERS.ID) AS number_of_orders
+from raw.jaffle_shop.customers C 
+left join raw.jaffle_shop.orders as Orders
+on orders.USER_ID = C.ID 
+group by 1)
+
+select
+p.*,
+ROW_NUMBER() OVER (ORDER BY p.order_id) as transaction_seq,
+ROW_NUMBER() OVER (PARTITION BY customer_id ORDER BY p.order_id) as customer_sales_seq,
+CASE WHEN c.first_order_date = p.order_placed_at
+THEN 'new'
+ELSE 'return' END as nvsr,
+x.clv_bad as customer_lifetime_value,
+c.first_order_date as fdos
+FROM paid_orders p
+left join customer_orders as c USING (customer_id)
+LEFT OUTER JOIN 
+(
+        select
+        p.order_id,
+        sum(t2.total_amount_paid) as clv_bad
+    from paid_orders p
+    left join paid_orders t2 on p.customer_id = t2.customer_id and p.order_id >= t2.order_id
+    group by 1
+    order by p.order_id
+) x on x.order_id = p.order_id
+ORDER BY order_id
+  );
+22:50:26.935533 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+22:50:27.743962 [debug] [Thread-1  ]: SQL status: SUCCESS 1 in 0.81 seconds
+22:50:27.756442 [debug] [Thread-1  ]: finished collecting timing info
+22:50:27.757374 [debug] [Thread-1  ]: On model.dbt_refactoring2.customer_orders: Close
+22:50:27.928123 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '4bb64edb-9406-4285-8f09-e53f810b3bad', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f387138bee0>]}
+22:50:27.929866 [info ] [Thread-1  ]: 1 of 1 OK created view model dbt_knguyen_refactor2.customer_orders.............. [[32mSUCCESS 1[0m in 1.08s]
+22:50:27.932182 [debug] [Thread-1  ]: Finished running node model.dbt_refactoring2.customer_orders
+22:50:27.935491 [debug] [MainThread]: Acquiring new snowflake connection "master"
+22:50:27.936785 [info ] [MainThread]: 
+22:50:27.938525 [info ] [MainThread]: Finished running 1 view model in 3.60s.
+22:50:27.940712 [debug] [MainThread]: Connection 'master' was properly closed.
+22:50:27.943097 [debug] [MainThread]: Connection 'model.dbt_refactoring2.customer_orders' was properly closed.
+22:50:27.960511 [info ] [MainThread]: 
+22:50:27.962609 [info ] [MainThread]: [32mCompleted successfully[0m
+22:50:27.964602 [info ] [MainThread]: 
+22:50:27.967173 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 TOTAL=1
+22:50:27.970305 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3872d47790>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3872d47640>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f38705bcd90>]}
