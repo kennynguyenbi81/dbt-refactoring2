@@ -1,0 +1,14 @@
+version: 2
+
+sources:
+  - name: dbt_knguyen_refactor2
+    database: analytics
+    tables:
+      - name: payments
+        description: source table of payments
+        columns:
+          - name: id
+            description: payment primary key
+            tests:
+              - unique
+              - not_null

@@ -1,0 +1,22 @@
+version: 2
+
+sources:
+  - name: dbt_knguyen_refactor2
+    database: analytics
+    tables:
+      - name: customers
+        description: source table of customers
+        columns:
+          - name: id
+            description: customer primary key
+            tests:
+              - unique
+              - not_null
+      - name: orders
+        description: source table of orders
+        columns:
+          - name: id
+            description: order primary key
+            tests:
+              - unique
+              - not_null
